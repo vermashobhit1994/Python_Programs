@@ -1,4 +1,5 @@
-#Program to understand the decorators in python
+#Program to understand the decorators in python using the div function .
+#adding the extra functionality to original div function.
 """
 Steps followed:
 1. We're first updating the address of new function i.e inner_func to a new 
