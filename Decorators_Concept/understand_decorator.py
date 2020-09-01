@@ -12,10 +12,6 @@ If yes then we swap the both.
 and then stop the execution to return to function call.
 """
 
-def div(a,b):
-    print("inside the original div with address : ",div)
-    print(a/b)
-
 def smart_div(func):
     #func stores the address of above div function
     print("inside the smart_div with func ",func)
@@ -30,17 +26,26 @@ def smart_div(func):
         #return is used to return the original function i.e div return value
         #and stop the execution here.
         return func(a,b)#calling the original div with a,b as parameters i.e div(a,b)
+
     print("outside the inner_func")#execute first time when changing the address
     return inner_func
 
+@smart_div #equivalent to div = smart_div(div)
+def div(a,b):
+    print("inside the original div with address : ",div)
+    print(a/b)
+
+
 #here we're modifying the address of the original function(div) by new functionality
 #function (inner_func).
-#so div1 will store the address of inner_func
-div1 = smart_div(div)
-print("div1 address after first call :",div1)
+#so first div will store the address of inner_func
+#div1 = smart_div(div)#comment out this line if use @smart_div 
+print("div address after first call :",div)
 
 print("\n\n")
 
-#div1 stores the address of inner_func. Calling the inner_func by parameters
-div1(2,4)
-print("div address after second call ",div1)
+#div stores the address of inner_func. Calling the inner_func by parameters
+div(2,4)
+print("div address after second call ",div)
+
+
