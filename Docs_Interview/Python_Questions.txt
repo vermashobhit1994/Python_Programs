@@ -1,0 +1,61 @@
+Python Assessment Questions:
+
+•	To print key and value from dict what method to use?
+•	How to get key if value matches in Dictionary?
+•	Is it possible to have two key in Dictionary?
+•	What will be the output if I am creating dictionary with the same key? 
+•	How to iterate through List?
+•	How to delete key value pair from dictionary?
+•	To square number how will you write code using list comprehension?
+•	When to use list comprehension?
+•	What is mutable and what is immutable?
+•	When to use tuple and when to use list?
+•	How to define class?
+•	How to access private member?
+•	When to use class variable/data member?
+•	Write code for showing Inheritance?
+•	What happens if method define in both derived and base class?
+•	Can we call same method inside my derived class?
+		What happen If we called in that way?
+		what is print sequence?
+•	Write your approach to design car class?
+•	Have you use thread what will be your approach to design thread ? when should we use thread? what is the meaning of join? where to use join?
+•	Do you know any anonymous function?
+•	Explain map, reduce and filter.
+•	What is higher level functions?
+•	How to insert element at particular index in a list?
+•	Difference between list and tuple?
+•	Why Xrange function is removed in Python 3.x ? which is replacing this functionality in Python 3.x?
+•	In tuple t=(1,2,3,4,[4,5,6]) ? Can i change value of Inner list in tuple ? if yes how ?
+•	Suppose I had tuple
+                >>> t=(1,2,3)
+                >>> t=(4,5,6)
+                >>> print t
+	What will be my output? What will happen inside heap?
+•	How to get key,value and keyValue pair in Dictionary?
+•	How do you declare empty class?
+•	How to use parent class variables in Child class ? how do you implement it?
+•	What is pass by value and pass by reference?
+•	In multiple inheritance parent are class A(),class B(),class C() and Child class D(A,B,C) has same method eat().How to call specific method in Different parent classes using 'super'
+•	What is lamda function? How do you pass value to that function 20.what are generators ?
+•	What is metaclass? How you declare? Where do you use it?
+•	Write list comprehension to get the output below
+                Input=[1,2,3,4,5,6]
+                Output=[1,4,27,16,125,36]
+•	Write a decorator which can be used to update input name string of functions as below:
+                Name= "John"
+                Updated name = "Mr. John"
+
+
+True or False questions =>
+
+1. Key elements in dictionary can be of any type (like list, tuple, string, dictionary, numeric).
+2. Mutable objects can be modified.
+3. Map function returns a List.
+4. will lambda function return a function object
+5. In python Overriding is not possible.
+6. Class variable can be modified by instance of the class.
+7. __init__() function is a constructor.
+8. "self" is an instance of the current working object.
+9. private variable in a class starts with '_'(single underscore)
+10. "shallow copy" copies the references of objects.
