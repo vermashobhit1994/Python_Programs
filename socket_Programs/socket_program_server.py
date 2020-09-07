@@ -49,6 +49,7 @@ with socket.socket(socket.AF_INET,socket.SOCK_STREAM) as soc:
             
             #send the data received to client again.
             #it returns the no of bytes sent
+            #here no error checking
             nbytes_send = conn_obj.sendall(data_recv)
 
             #print the no of bytes sent

@@ -27,6 +27,7 @@ with socket.socket(socket.AF_INET,socket.SOCK_STREAM) as soc:
     data_send_bytes = bytes(data_send,'ascii')
     
     #send the data input from user
+    #here no error checking
     nbytes_send = soc.sendall(data_send_bytes)
     print("nbytes sent : ",nbytes_send)
     
